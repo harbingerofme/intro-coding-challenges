@@ -1,16 +1,23 @@
 # Black and White Quad Trees
 
+## short
+```json
+difficulty : 2
+tags       : ["console","files","images","data formatting"]
+```
+## Goal
 The goal is to convert black and white images to a corresponding quad tree representation.
 
 If the entire square is a single color, then it's represented by a `0` followed by `0` if it's white, and `1` if it's black.
 If the square is not uniform, it's represented by a `1` followed by four new squares, starting in the top left, then top right, bottom left, bottom right.
 
-Alternative naming calls non-uniform square a `tree` and a uniform square a `leaf`.
-
 #### Bonus:
 Do the opposite: create an image from a binary representation.
 
-### Input:
+## Background
+Alternative naming calls non-uniform square a `node` and a uniform square a `leaf`.
+
+## Input:
 a single string that's the path to an image file.
     - image will aways be square
     - width will always be a power of 2
@@ -20,12 +27,12 @@ a single string that's the path to an image file.
 1. A binary representation of a quad tree.
 2. The filename it should be saved to.
 
-### Output:
+## Output:
 A stream of 1 and 0 characters that represents the image.
 #### bonus:
 A file should be created with the input filename that is the image representing the input.
 
-### Example:
+## Example:
 ```sh
 > myprogram examples/example-1.bmp
 00
@@ -37,7 +44,7 @@ A file should be created with the input filename that is the image representing 
 > myprogram2 101000100 output.bmp
 ```
 this should create a file named `output.bmp` that's 2 by 2 pixels big, where the left 2 pixels are black and the right 2 pixels are white.
-# Pointers:
+## Pointers:
 
 * Reading the commandline:
     * the path to the image will always be the first argument in the string args passed to your main method. For example:

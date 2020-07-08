@@ -3,7 +3,7 @@
 ## Short:
 ```json
 difficulty : 1
-tags       : ["console","boardgame"],
+tags       : ["console","boardgame"]
 ```
 
 
