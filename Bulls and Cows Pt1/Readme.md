@@ -13,7 +13,7 @@ tags       : ["console","boardgame"]
 
 ## Goal
 
-Implement a version of bulls and cows for 1 person. The game is palyed with a fixed secret number of 4 digits.
+Implement a version of bulls and cows for 1 person. The game is played with a fixed secret number of 4 digits.
 
 ## Input
 
@@ -37,7 +37,7 @@ The game ends when the string `4b0c` is outputted.
 * Secret number: `0000`
     1. Input: `1234`. Output: `0b0c`.
     2. Input: `0120`. Output: `2b0c`.
-    3. Input: `0000`. Output: `4b`
+    3. Input: `0000`. Output: `4b0c`.
 * Secret number: `6969`
     1. Input: `9696`. Output: `0b4c`.
     2. Input: `6666`. Output: `2b0c`.
